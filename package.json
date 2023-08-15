@@ -1,0 +1,14 @@
+{
+  "name": "digital-clock",
+  "version": "1.0.0",
+  "description": "Woking on digital clock with js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gbolahan",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

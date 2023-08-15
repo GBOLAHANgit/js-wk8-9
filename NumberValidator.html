@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body class="p-[30px] items-center justify-center flex pt-10 bg-teal-200">
+    <main class="w-[50%] bg-amber-500 p-[10px] py-5 rounded-3xl grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 row-[200px] h-max m-[20px]">
+       
+        <h1 class=" flex flex-col text-white h-[200px] text-3xl font-bold pt-9 pl-4">Phone <span> Validator</span> <span class="text-xs font-light font-sans">select country code and write Numbers Without Country Code</span></h1>
+        <div class="bg-white h-[200px] rounded-xl py-5 px-5">
+
+
+            <div class=" flex flex-col font-mono pb-3 ">
+            <label for="Phone" class="font-thin text-xs">Phone</label>
+            <input type="number" name="phone" id="phone" class="border-2 border-yellow-400 ">
+        </div>
+
+        <div class=" flex flex-col font-mono">
+            <label for="text" class="font-thin text-xs">Country</label>
+
+            <select type="text" name="country" id="text" class="border-2 border-yellow-400 bg-white"> 
+                <optgroup label="Choose-Country">
+                    <option value="usa">United States</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="australia">Australia</option>
+                    <option value="france">France</option>
+                  </optgroup>
+            </select>
+        </div>
+      
+        <div class="pt-5 pl-5"> <button class="bg-white text-yellow-500 font-sans border-2 border-yellow-500 rounded-3xl py-[3px] px-[8px]">-Reset-</button>
+             <button class="bg-yellow-500 text-white font-sans rounded-3xl py-[3px] px-[8px]">Validate</button>
+        
+        </div>
+        
+
+    </main>
+</body>
+</html>

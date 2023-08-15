@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="">
+    <main>
+        <H1> PALINDROME CHECKER</H1>
+        
+        <div><input type="text" name="pan" id="pali" placeholder="input a word"></div>
+        <button>Palindrome</button>
+
+        <p></p>
+    </main>
+</body>
+<script>
+    const btn = document.querySelector('button')
+    const input = document.querySelector('input')
+    const para = document.querySelector('p')
+
+    const palCheck = () => { 
+        let val = (input.value)
+        val = val.toLowerCase
+        let regex = /[a-z0-9]/gi
+        let str1 = val.match(regex)
+        let str2  = str1.slice()
+         str2  = str2.reverse()
+        str1 = str1.join('')
+        str2 = str2.join('')
+
+
+
+        
+        para.innerText = str2 === str1
+
+    }
+    btn.addEventListener('click', palCheck)
+</script>
+</html>
